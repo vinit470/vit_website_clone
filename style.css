@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://vitbhopal.ac.in/file/2020/07/cl3a.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.nevbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    height: 20%;
+    width: 100%;
+    background-color: rgb(100, 100, 123);
+}
+#header img{
+    height: 111px;
+    width: 305px;
+    padding: -5px 22px;
+    margin: -12px 22px;
+}
+.nevbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+    
+}
+.navb{
+    border: 6px solid rgb(61, 138, 197);
+    border-radius: 29px;
+    background-color: rgb(135, 159, 176);
+    padding: 8px 37px;
+}
+.nevbar ul li a{
+    color: white;
+    
+    background-color: rgb(74, 64, 64);
+    padding: 7px 32px;
+    margin: 2px 22px;
+    font-size: 16px;
+    font-family: cursive;
+    border-radius: 13px;
+    text-decoration: none;
+}
+   
+
+.nevbar ul li a:hover{
+    color: black;
+    background-color: rgb(110, 146, 154);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-box{
+    width: 90%;
+    color: rgb(204, 204, 219);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: rgb(0, 179, 255);
+}
+.text-box a{
+    border: 6px solid #252e49;
+    color: #232168;
+    background-color: rgb(155 166 181);
+    font-size: 28px;
+    border-radius: 36px;
+    padding: 2px 32px;
+    margin: 34px 76px;
+}
+.text-box a:hover{
+    color: black;
+    background-color: rgb(74, 74, 199);
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;}
+        .nevbar ul li{
+            display: block ;
+        }
+        .nevbar{
+            position: absolute;
+            background:#00a5fd;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: 0;
+            text-align: left;
+            z-index: 2;
+        }
+}
+/*-----cources-------*/
+.course{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    border:6px solid rgb(76, 108, 135);
+    background-color: rgb(133, 133, 184);
+}
+.course h1{
+    font-size: 60px;
+    font-weight: 600
+    ;
+
+}
+.course p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding:10px
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background:#b2a87a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2)
+
+}@media(max-width:700px){
+    .row{
+        flex-direction: column;
+
+    }
+}
+/*-------------------campus-------------------*/
+.campus{
+    width: 94%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    font-size: 32px;
+    border: 2px solid black;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://cache.careers360.mobi/media/presets/860X430/article_images/2020/12/16/VIT-University-Admission.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.campus-col img{
+    width: 100%;
+    padding: 2px;
+    display: block;
+
+
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+}
+.layer:hover{
+    background:rgba(226,0,0,0.7) ;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+.future1{
+    width: 94%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    font-size: 34px;
+    border: 4px solid rgb(85, 85, 205);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://th.bing.com/th/id/R.17b33d455795f7955f374703ec5db7ec?rik=NxSsDRRowb8cGw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fngPEfyE.jpg&ehk=H8cSGsfjlgPQaG1%2f3Ozt2CphyeUbP7kRRn7Dc8mef9s%3d&risl=&pid=ImgRaw&r=0');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.future-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.future-col img{
+    width: 100%;
+    padding: 2px;
+    display: block;
+
+
+}
+.future{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+}
+.future:hover{
+    background:rgba(226,0,0,0.7) ;
+}
+.future h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.future:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.facilities{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    border: 2px solid black;
+    background-color: rgb(125, 125, 159);
+}
+
+
+.facilities{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.facilities img{
+    width: 23%;
+}
+
+
+
+
+.cta{
+    margin: 100px auto;
+    width: 99%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://vit.ac.in/sites/default/files/header_banner/047.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+   
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.btn{
+    border: 2px solid rgb(241, 111, 5);
+    background-color: tomato;
+    cursor: pointer;
+    padding: 2px 22px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.btn:hover{
+    color: rgb(11, 11, 11);
+    background-color: rgb(230, 191, 119);
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
+
+/* footer */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url("HeaderV1.jpg");
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+
+}
+.form-box h2::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.input-feild{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+.input-feild input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-feild i{
+    margin-left: 15px;
+    columns: #999;
+}
+form p{
+    text-align: left;
+    font-size: 15px;
+
+
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-feild{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-feild button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+    height: 280px;
+
+}
+.btn-feild button.disable{
+    background: #eaeaea;
+    color: #555;
+}
